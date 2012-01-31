@@ -1,68 +1,108 @@
-/* line 3, ../../../app/stylesheets/jqModal.sass */
-.modal_overlay {
-  background-color: black; }
+/*
+Syntax error: Invalid CSS after "top:": expected pseudoclass or pseudoelement, was "0"
+        on line 48 of /Users/miguel/Projects/Lab/carpool_app/app/stylesheets/jqModal.sass
 
-/* line 6, ../../../app/stylesheets/jqModal.sass */
-.modal_window {
-  display: none;
-  position: fixed;
-  top: 17%;
-  left: 50%;
-  margin-left: -300px;
-  width: 600px;
-  background: url('/images/transparent_backgrounds/black_30.png');
-  color: #333;
-  padding: 10px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }
-  /* line 17, ../../../app/stylesheets/jqModal.sass */
-  .modal_window > div.header {
-    position: relative;
-    background: #6ba41e;
-    padding: 5px 20px 4px;
-    border-top-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -webkit-border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    -moz-border-radius-topright: 3px;
-    -webkit-border-top-right-radius: 3px;
-    border-bottom: 1px solid #507b16; }
-    /* line 23, ../../../app/stylesheets/jqModal.sass */
-    .modal_window > div.header h3 {
-      margin: 0;
-      font-weight: bold;
-      font-size: 16px;
-      color: white; }
-    /* line 28, ../../../app/stylesheets/jqModal.sass */
-    .modal_window > div.header>a.modal_close {
-      display: block;
-      height: 22px;
-      width: 22px;
-      position: absolute;
-      top: -5px;
-      right: -5px;
-      background: #6ba41e;
-      border-radius: 11px;
-      -moz-border-radius: 11px;
-      -webkit-border-radius: 11px; }
-      /* line 37, ../../../app/stylesheets/jqModal.sass */
-      .modal_window > div.header>a.modal_close img {
-        margin: 3px 0 0 3px; }
-  /* line 39, ../../../app/stylesheets/jqModal.sass */
-  .modal_window > div.content {
-    padding: 37px 40px 40px;
-    background: white;
-    border-bottom-right-radius: 3px;
-    -moz-border-radius-bottomright: 3px;
-    -webkit-border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    border-top: 3px solid #e7e7e7; }
+43:     border-top: 3px "solid" $white * 0.66 + $light_grey * 0.33
+44:   
+45: /* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+46: * iframe.modal
+47:   position:absolute
+48:   top:0
+49:   left:0
+50:   z-index:-1
+51:   width: expression(this.parentNode.offsetWidth+'px')
+52:   height: expression(this.parentNode.offsetHeight+'px')
 
-/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
-/* line 46, ../../../app/stylesheets/jqModal.sass */
-* iframe.modal {
-  width: expression(this.parentNode.offsetWidth+'px');
-  height: expression(this.parentNode.offsetHeight+'px'); }
+Backtrace:
+/Users/miguel/Projects/Lab/carpool_app/app/stylesheets/jqModal.sass:48
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/parser.rb:926:in `expected'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/parser.rb:872:in `expected'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/parser.rb:854:in `expr!'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/parser.rb:620:in `pseudo'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/parser.rb:506:in `simple_selector_sequence'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/parser.rb:482:in `_selector'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/parser.rb:466:in `selector_comma_sequence'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/parser.rb:853:in `send'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/parser.rb:853:in `expr!'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/scss/static_parser.rb:18:in `parse_selector'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:228:in `visit_rule'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:234:in `visit_rule'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/engine.rb:300:in `_render'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/engine.rb:248:in `render'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/util.rb:297:in `silence_sass_warnings'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/engine.rb:248:in `render'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/plugin/compiler.rb:181:in `update_stylesheets'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/plugin/compiler.rb:175:in `each'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/plugin/compiler.rb:175:in `update_stylesheets'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/plugin/compiler.rb:173:in `each'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/plugin.rb:81:in `update_stylesheets'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/plugin.rb:54:in `check_for_updates'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/sass-3.1.10/lib/sass/../sass/plugin/rack.rb:51:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.12/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.12/lib/action_controller/params_parser.rb:15:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.12/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.12/lib/action_controller/failsafe.rb:26:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.12/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.12/lib/action_controller/reloader.rb:34:in `run'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.12/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rails-2.3.12/lib/rails/rack/static.rb:31:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rails-2.3.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+/Users/miguel/.rvm/gems/ruby-1.8.7-p352/gems/rails-2.3.12/lib/commands/server.rb:111
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/miguel/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"top:\": expected pseudoclass or pseudoelement, was \"0\"\A         on line 48 of /Users/miguel/Projects/Lab/carpool_app/app/stylesheets/jqModal.sass\A \A 43:     border-top: 3px \"solid\" $white * 0.66 + $light_grey * 0.33\A 44:   \A 45: /* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */\A 46: * iframe.modal\A 47:   position:absolute\A 48:   top:0\A 49:   left:0\A 50:   z-index:-1\A 51:   width: expression(this.parentNode.offsetWidth+'px')\A 52:   height: expression(this.parentNode.offsetHeight+'px')"; }

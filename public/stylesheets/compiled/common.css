@@ -1,6 +1,6 @@
 /* line 4, ../../../app/stylesheets/common.sass */
 .with_grid {
-  background: transparent url('/images/grid.png'); }
+  background: transparent url(/images/grid.png); }
 
 /* line 8, ../../../app/stylesheets/common.sass */
 body {
@@ -22,7 +22,7 @@ a {
     color: #cc0000; }
   /* line 20, ../../../app/stylesheets/common.sass */
   a.disabled {
-    color: !grey;
+    color: gray;
     text-decoration: none;
     cursor: default; }
   /* line 24, ../../../app/stylesheets/common.sass */
@@ -76,29 +76,29 @@ html[xmlns] .clearfix {
 
 /* line 57, ../../../app/stylesheets/common.sass */
 div.panel {
-  background: url('/images/transparent_backgrounds/black_05.png');
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
+  background: url(/images/transparent_backgrounds/black_05.png);
+  border-radius: "3px";
+  -moz-border-radius: "3px";
+  -webkit-border-radius: "3px";
   padding: 4px;
   margin: 0 0 20px; }
   /* line 62, ../../../app/stylesheets/common.sass */
   div.panel > div.header {
     padding: 5px 10px;
-    background: url('/images/transparent_backgrounds/main_colour_50.png');
-    border: 1px solid #95b26f;
-    border-top-left-radius: 2px;
-    -moz-border-radius-topleft: 2px;
-    -webkit-border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    -moz-border-radius-topright: 2px;
-    -webkit-border-top-right-radius: 2px; }
+    background: url(/images/transparent_backgrounds/main_colour_50.png);
+    border: 1px "solid" #95b26f;
+    border-top-left-radius: "2px";
+    -moz-border-radius-topleft: "2px";
+    -webkit-border-top-left-radius: "2px";
+    border-top-right-radius: "2px";
+    -moz-border-radius-topright: "2px";
+    -webkit-border-top-right-radius: "2px"; }
     /* line 67, ../../../app/stylesheets/common.sass */
     div.panel > div.header h2 {
       margin: 0;
       font-size: 14px;
       font-weight: bold;
-      text-shadow: 1px 1px 0px #466c13;
+      text-shadow: "1px" "1px" "0px" #466c13;
       color: white;
       line-height: 1; }
     /* line 74, ../../../app/stylesheets/common.sass */
@@ -107,25 +107,25 @@ div.panel {
   /* line 76, ../../../app/stylesheets/common.sass */
   div.panel > div.content {
     position: relative;
-    border: 1px solid silver;
+    border: 1px "solid" silver;
     background: white;
     padding: 20px;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px; }
+    border-radius: "2px";
+    -moz-border-radius: "2px";
+    -webkit-border-radius: "2px"; }
     /* line 82, ../../../app/stylesheets/common.sass */
     div.panel > div.content.no_padding {
       padding: 0; }
   /* line 84, ../../../app/stylesheets/common.sass */
   div.panel > div.footer {
     background: #f4f4f4;
-    border: 1px solid silver;
-    border-bottom-right-radius: 3px;
-    -moz-border-radius-bottomright: 3px;
-    -webkit-border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    -webkit-border-bottom-left-radius: 3px;
+    border: 1px "solid" silver;
+    border-bottom-right-radius: "3px";
+    -moz-border-radius-bottomright: "3px";
+    -webkit-border-bottom-right-radius: "3px";
+    border-bottom-left-radius: "3px";
+    -moz-border-radius-bottomleft: "3px";
+    -webkit-border-bottom-left-radius: "3px";
     padding: 5px;
     overflow: hidden; }
     /* line 90, ../../../app/stylesheets/common.sass */
@@ -138,35 +138,35 @@ div.panel {
       padding: 0 5px;
       text-transform: uppercase;
       color: white;
-      text-shadow: 1px 1px 0px #466c13;
-      border: 1px solid #466c13;
+      text-shadow: "1px" "1px" "0px" #466c13;
+      border: 1px "solid" #466c13;
       border-left: none;
       border-top: none;
       background: #6ba41e;
-      box-shadow: 1px 1px 0px transparent;
-      -webkit-box-shadow: 1px 1px 0px transparent;
-      -moz-box-shadow: 1px 1px 0px transparent;
-      border-radius: 2px;
-      -moz-border-radius: 2px;
-      -webkit-border-radius: 2px; }
+      box-shadow: "1px" "1px" "0px" transparent;
+      -webkit-box-shadow: "1px" "1px" "0px" transparent;
+      -moz-box-shadow: "1px" "1px" "0px" transparent;
+      border-radius: "2px";
+      -moz-border-radius: "2px";
+      -webkit-border-radius: "2px"; }
   /* line 107, ../../../app/stylesheets/common.sass */
   div.panel.with_header div.content {
     border-top: none;
-    border-top-left-radius: 0px;
-    -moz-border-radius-topleft: 0px;
-    -webkit-border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    -moz-border-radius-topright: 0px;
-    -webkit-border-top-right-radius: 0px; }
+    border-top-left-radius: "0px";
+    -moz-border-radius-topleft: "0px";
+    -webkit-border-top-left-radius: "0px";
+    border-top-right-radius: "0px";
+    -moz-border-radius-topright: "0px";
+    -webkit-border-top-right-radius: "0px"; }
   /* line 111, ../../../app/stylesheets/common.sass */
   div.panel.with_footer div.content {
     border-bottom: none;
-    border-bottom-right-radius: 0px;
-    -moz-border-radius-bottomright: 0px;
-    -webkit-border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    -moz-border-radius-bottomleft: 0px;
-    -webkit-border-bottom-left-radius: 0px; }
+    border-bottom-right-radius: "0px";
+    -moz-border-radius-bottomright: "0px";
+    -webkit-border-bottom-right-radius: "0px";
+    border-bottom-left-radius: "0px";
+    -moz-border-radius-bottomleft: "0px";
+    -webkit-border-bottom-left-radius: "0px"; }
 
 /* line 116, ../../../app/stylesheets/common.sass */
 div.nav div.content {
@@ -212,7 +212,7 @@ div.nav div.content {
         div.nav div.content ul li.current b.arrow {
           border: 18px solid transparent;
           border-right: none;
-          border-left: 10px solid #6ba41e;
+          border-left: 10px "solid" #6ba41e;
           float: right;
           display: block;
           height: 0;
@@ -239,14 +239,14 @@ p.breadcrumbs {
   color: gray;
   padding: 0 0 5px;
   margin: 0 0 10px;
-  border-bottom: 1px solid #dfdfdf; }
+  border-bottom: 1px "solid" #dfdfdf; }
 
 /* line 174, ../../../app/stylesheets/common.sass */
 p.flash {
   margin: 0 0 20px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
+  border-radius: "3px";
+  -moz-border-radius: "3px";
+  -webkit-border-radius: "3px";
   font-size: 12px;
   font-weight: bold;
   padding: 0 0 0 21px;
@@ -255,20 +255,20 @@ p.flash {
   /* line 182, ../../../app/stylesheets/common.sass */
   p.flash.error {
     color: #860000;
-    background-image: url('/images/icons/exclamation-red.png'); }
+    background-image: url(/images/icons/exclamation-red.png); }
   /* line 185, ../../../app/stylesheets/common.sass */
   p.flash.notice {
     color: #008600;
-    background-image: url('/images/icons/information.png'); }
+    background-image: url(/images/icons/information.png); }
 
 /* line 189, ../../../app/stylesheets/common.sass */
 span.marker_way_point {
   display: inline-block;
   background: white;
-  border: 1px solid silver;
-  border-radius: 8px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
+  border: 1px "solid" silver;
+  border-radius: "8px";
+  -moz-border-radius: "8px";
+  -webkit-border-radius: "8px";
   padding: 1px;
   height: 12px;
   width: 12px; }
@@ -284,21 +284,21 @@ span.marker_way_point {
     height: 12px;
     line-height: 12px;
     text-align: center;
-    border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px; }
+    border-radius: "6px";
+    -moz-border-radius: "6px";
+    -webkit-border-radius: "6px"; }
 
 /* line 209, ../../../app/stylesheets/common.sass */
 span.marker_time {
   display: inline-block;
-  background: url('/images/icons/clock.png');
+  background: url(/images/icons/clock.png);
   height: 16px;
   width: 16px; }
 
 /* line 214, ../../../app/stylesheets/common.sass */
 span.marker_passengers {
   display: inline-block;
-  background: url('/images/icons/user.png');
+  background: url(/images/icons/user.png);
   height: 16px;
   width: 16px; }
 
@@ -308,18 +308,18 @@ span.marker_passengers {
   margin: 0;
   line-height: 30px;
   height: 30px;
-  box-shadow: 2px 2px 2px #e7e7e7;
-  -webkit-box-shadow: 2px 2px 2px #e7e7e7;
-  -moz-box-shadow: 2px 2px 2px #e7e7e7;
-  border: 1px solid #dfdfdf;
+  box-shadow: "2px" "2px" "2px" #e7e7e7;
+  -webkit-box-shadow: "2px" "2px" "2px" #e7e7e7;
+  -moz-box-shadow: "2px" "2px" "2px" #e7e7e7;
+  border: 1px "solid" #dfdfdf;
   color: black;
   font-weight: bold;
   background: white;
-  text-shadow: 0px 0px 0px transparent; }
+  text-shadow: "0px" "0px" "0px" transparent; }
   /* line 233, ../../../app/stylesheets/common.sass */
   #page_title #page_options a.button.negative {
     color: #ad0000;
-    border: 1px solid #ad0000; }
+    border: 1px "solid" #ad0000; }
   /* line 236, ../../../app/stylesheets/common.sass */
   #page_title #page_options a.button img {
     margin: 0 5px 0 0;
@@ -336,37 +336,37 @@ div.inner_shadow {
     left: 0;
     right: 0;
     height: 5px;
-    background: url('/images/inner_shadow_top.png') repeat-x left top; }
+    background: url(/images/inner_shadow_top.png) repeat-x left top; }
   /* line 250, ../../../app/stylesheets/common.sass */
   div.inner_shadow.right {
     top: 0;
     bottom: 0;
     right: 0;
     width: 5px;
-    background: url('/images/inner_shadow_right.png') repeat-y left top; }
+    background: url(/images/inner_shadow_right.png) repeat-y left top; }
   /* line 256, ../../../app/stylesheets/common.sass */
   div.inner_shadow.bottom {
     bottom: 0;
     left: 0;
     right: 0;
     height: 5px;
-    background: url('/images/inner_shadow_bottom.png') repeat-x left top; }
+    background: url(/images/inner_shadow_bottom.png) repeat-x left top; }
   /* line 262, ../../../app/stylesheets/common.sass */
   div.inner_shadow.left {
     top: 0;
     bottom: 0;
     left: 0;
     width: 5px;
-    background: url('/images/inner_shadow_left.png') repeat-y left top; }
+    background: url(/images/inner_shadow_left.png) repeat-y left top; }
 
 /* line 269, ../../../app/stylesheets/common.sass */
 span.notification {
   display: inline-block;
   padding: 2px;
-  background: url('/images/transparent_backgrounds/black_10.png');
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px; }
+  background: url(/images/transparent_backgrounds/black_10.png);
+  border-radius: "100px";
+  -moz-border-radius: "100px";
+  -webkit-border-radius: "100px"; }
   /* line 274, ../../../app/stylesheets/common.sass */
   span.notification b {
     display: block;
@@ -375,10 +375,10 @@ span.notification {
     color: white;
     background: #cc0000;
     font-weight: bold;
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    text-shadow: 1px 1px 0px #860000;
+    border-radius: "100px";
+    -moz-border-radius: "100px";
+    -webkit-border-radius: "100px";
+    text-shadow: "1px" "1px" "0px" #860000;
     height: 16px;
     min-width: 16px;
     line-height: 16px;

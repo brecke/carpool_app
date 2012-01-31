@@ -63,9 +63,9 @@ form input[type=text], form input[type=password] {
   font-size: 14px;
   padding: 5px 3px 0;
   height: 21px;
-  border: 1px solid #e5e5e5;
-  border-top: 1px solid #bfbfbf;
-  border-left: 1px solid #bfbfbf; }
+  border: 1px "solid" #e5e5e5;
+  border-top: 1px "solid" #bfbfbf;
+  border-left: 1px "solid" #bfbfbf; }
   /* line 61, ../../../app/stylesheets/forms.sass */
   form input[type=text].is_blank, form input[type=password].is_blank {
     color: silver; }
@@ -73,9 +73,9 @@ form input[type=text], form input[type=password] {
 form textarea {
   padding: 5px 3px;
   font-size: 14px;
-  border: 1px solid #e5e5e5;
-  border-top: 1px solid #bfbfbf;
-  border-left: 1px solid #bfbfbf;
+  border: 1px "solid" #e5e5e5;
+  border-top: 1px "solid" #bfbfbf;
+  border-left: 1px "solid" #bfbfbf;
   margin: 0; }
 /* line 71, ../../../app/stylesheets/forms.sass */
 form .err span.err_msg {
@@ -125,18 +125,18 @@ form.lw160 p.indent {
 /* line 108, ../../../app/stylesheets/forms.sass */
 a.button {
   display: inline-block;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
+  border-radius: "3px";
+  -moz-border-radius: "3px";
+  -webkit-border-radius: "3px";
   background: #efefef;
   color: white;
-  text-shadow: -1px -1px 0px #507b16;
-  border: 1px solid #e7e7e7;
+  text-shadow: "-1px" "-1px" "0px" #507b16;
+  border: 1px "solid" #e7e7e7;
   text-decoration: none;
   padding: 0 10px;
   line-height: 27px;
   font-size: 16px;
   height: 26px;
-  box-shadow: 2px 2px 4px silver;
-  -webkit-box-shadow: 2px 2px 4px silver;
-  -moz-box-shadow: 2px 2px 4px silver; }
+  box-shadow: "2px" "2px" "4px" silver;
+  -webkit-box-shadow: "2px" "2px" "4px" silver;
+  -moz-box-shadow: "2px" "2px" "4px" silver; }

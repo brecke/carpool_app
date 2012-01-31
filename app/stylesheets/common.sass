@@ -2,29 +2,29 @@
 
 // Show Grid
 .with_grid
-  background: transparent url('/images/grid.png')
+  background: transparent url(/images/grid.png)
 
 // Typography
 body
   position: relative
   font-family: helvetica, arial, sans-serif
   +font_size("medium")
-  color = !dark_grey
+  color: $dark_grey
 *
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 0
 a
-  color = !main_colour
+  color: $main_colour
   outline: none
   &.negative
-    color = !colour_negative
+    color: $colour_negative
   &.disabled
-    color: !grey
+    color: $grey
     text-decoration: none
     cursor: default
   &:hover
     text-decoration: none
 h1, h2, h3, h4
-  color = !black
+  color: $black
 h1
   +font_size("huge")
   font-weight: bold
@@ -55,35 +55,35 @@ html[xmlns] .clearfix
   height: 1%
 
 div.panel
-  background: url('/images/transparent_backgrounds/black_05.png')
+  background: url(/images/transparent_backgrounds/black_05.png)
   +rounded_corners("all", 3)
   padding: 4px
   margin: 0 0 20px
   > div.header
     padding: 5px 10px
-    background: url('/images/transparent_backgrounds/main_colour_50.png')
-    border = 1px "solid" !main_colour * 0.5 + !light_grey * 0.5
+    background: url(/images/transparent_backgrounds/main_colour_50.png)
+    border: 1px "solid" $main_colour * 0.5 + $light_grey * 0.5
     +rounded_corners("top", 2)
     h2
       margin: 0
       +font_size("medium")
       font-weight: bold
-      +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
-      color = !white
+      +text_shadow(1, 1, 0, $main_colour * 0.66 + $black * 0.33)
+      color: $white
       line-height: 1
     span.options
       float: right
   > div.content
     position: relative
-    border = 1px "solid" !light_grey
-    background = !white
+    border: 1px "solid" $light_grey
+    background: $white
     padding: 20px
     +rounded_corners("all", 2)
     &.no_padding
       padding: 0
   > div.footer
-    background = !light_grey * 0.15 + !white * 0.85
-    border = 1px "solid" !light_grey
+    background: $light_grey * 0.15 + $white * 0.85
+    border: 1px "solid" $light_grey
     +rounded_corners("bottom", 3)
     padding: 5px
     overflow: hidden
@@ -95,12 +95,12 @@ div.panel
       height: 16px
       padding: 0 5px
       text-transform: uppercase
-      color = !white
-      +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
-      border = 1px "solid" !main_colour * 0.66 + !black * 0.33
+      color: $white
+      +text_shadow(1, 1, 0, $main_colour * 0.66 + $black * 0.33)
+      border: 1px "solid" $main_colour * 0.66 + $black * 0.33
       border-left: none
       border-top: none
-      background = !main_colour
+      background: $main_colour
       +box_shadow(1, 1, 0, transparent)
       +rounded_corners("all", 2)
   &.with_header
@@ -116,7 +116,7 @@ div.nav
   div.content
     padding: 0
     ul
-      background = !light_grey * 0.5 + !white * 0.5
+      background: $light_grey * 0.5 + $white * 0.5
       li
         display: block
         list-style: none
@@ -130,11 +130,11 @@ div.nav
           line-height: 36px
           text-align: right
           text-decoration: none
-          color = !grey
+          color: $grey
           font-weight: bold
-          background = !white
+          background: $white
           &:hover
-            color = !main_colour
+            color: $main_colour
         span.notification
           float: right
           margin: 6px 0 0 5px
@@ -147,7 +147,7 @@ div.nav
           b.arrow
             border: 18px solid transparent
             border-right: none
-            border-left = 10px "solid" !main_colour
+            border-left: 10px "solid" $main_colour
             float: right
             display: block
             height: 0
@@ -155,21 +155,21 @@ div.nav
             position: relative
             right: -10px
           a
-            background-color = !main_colour
-            color = !white
+            background-color: $main_colour
+            color: $white
         &:last-child
           margin: 0
 
 p.leader
   +font_size("large")
   margin: 0 0 30px
-  color = !grey
+  color: $grey
 p.breadcrumbs
   +font_size("small")
-  color = !grey
+  color: $grey
   padding: 0 0 5px
   margin: 0 0 10px
-  border-bottom = 1px "solid" !light_grey * 0.5 + !white * 0.5
+  border-bottom: 1px "solid" $light_grey * 0.5 + $white * 0.5
 
 p.flash
   margin: 0 0 20px
@@ -180,23 +180,23 @@ p.flash
   background-repeat: no-repeat
   background-position: left top
   &.error
-    color = !colour_negative * 0.66 + !black * 0.33
-    background-image: url('/images/icons/exclamation-red.png')
+    color: $colour_negative * 0.66 + $black * 0.33
+    background-image: url(/images/icons/exclamation-red.png)
   &.notice
-    color = !colour_positive * 0.66 + !black * 0.33
-    background-image: url('/images/icons/information.png')
+    color: $colour_positive * 0.66 + $black * 0.33
+    background-image: url(/images/icons/information.png)
 
 span.marker_way_point
   display: inline-block
-  background = !white
-  border = 1px "solid" !light_grey
+  background: $white
+  border: 1px "solid" $light_grey
   +rounded_corners("all", 8)
   padding: 1px
   height: 12px
   width: 12px
   b
-    color = !white
-    background = !main_colour
+    color: $white
+    background: $main_colour
     font-weight: bold
     text-transform: uppercase
     +font_size("tiny")
@@ -208,12 +208,12 @@ span.marker_way_point
     +rounded_corners("all", 6)
 span.marker_time
   display: inline-block
-  background: url('/images/icons/clock.png')
+  background: url(/images/icons/clock.png)
   height: 16px
   width: 16px
 span.marker_passengers
   display: inline-block
-  background: url('/images/icons/user.png')
+  background: url(/images/icons/user.png)
   height: 16px
   width: 16px
 
@@ -224,15 +224,15 @@ span.marker_passengers
       margin: 0
       line-height: 30px
       height: 30px
-      +box_shadow(2, 2, 2, !light_grey * 0.33 + !white * 0.66)
-      border = 1px "solid" !light_grey * 0.5 + !white * 0.5
-      color = !black
+      +box_shadow(2, 2, 2, $light_grey * 0.33 + $white * 0.66)
+      border: 1px "solid" $light_grey * 0.5 + $white * 0.5
+      color: $black
       font-weight: bold
-      background = !white
+      background: $white
       +text_shadow(0, 0, 0, transparent)
       &.negative
-        color = !colour_negative * 0.85 + !black * 0.15
-        border = 1px "solid" !colour_negative * 0.85 + !black * 0.15
+        color: $colour_negative * 0.85 + $black * 0.15
+        border: 1px "solid" $colour_negative * 0.85 + $black * 0.15
       img
         margin: 0 5px 0 0
         position: relative
@@ -246,45 +246,45 @@ div.inner_shadow
     left: 0
     right: 0
     height: 5px
-    background: url('/images/inner_shadow_top.png') repeat-x left top
+    background: url(/images/inner_shadow_top.png) repeat-x left top
   &.right
     top: 0
     bottom: 0
     right: 0
     width: 5px
-    background: url('/images/inner_shadow_right.png') repeat-y left top
+    background: url(/images/inner_shadow_right.png) repeat-y left top
   &.bottom
     bottom: 0
     left: 0
     right: 0
     height: 5px
-    background: url('/images/inner_shadow_bottom.png') repeat-x left top
+    background: url(/images/inner_shadow_bottom.png) repeat-x left top
   &.left
     top: 0
     bottom: 0
     left: 0
     width: 5px
-    background: url('/images/inner_shadow_left.png') repeat-y left top
+    background: url(/images/inner_shadow_left.png) repeat-y left top
 
 span.notification
   display: inline-block
   padding: 2px
-  background: url('/images/transparent_backgrounds/black_10.png')
+  background: url(/images/transparent_backgrounds/black_10.png)
   +rounded_corners("all", 100)
   b
     display: block
     text-align: center
     padding: 0
-    color = !white
-    background = !colour_negative
+    color: $white
+    background: $colour_negative
     font-weight: bold
     +rounded_corners("all", 100)
-    +text_shadow(1, 1, 0, !colour_negative * 0.66 + !black * 0.33)
+    +text_shadow(1, 1, 0, $colour_negative * 0.66 + $black * 0.33)
     height: 16px
     min-width: 16px
     line-height: 16px
     +font_size("small")
-    border = 2px solid !white
+    border: 2px solid $white
   &.small
     b
       height: 12px

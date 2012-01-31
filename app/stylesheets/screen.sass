@@ -10,15 +10,15 @@
     left: 0
     right: 0
     z-index: 100
-    background: url('/images/transparent_backgrounds/main_colour_90.png')
+    background: url(/images/transparent_backgrounds/main_colour_90.png)
     div.text
       width: 374px
       padding: 40px 20px 40px 40px
       float: left
       padding-right: 20px
       &>*
-        color = !white
-        +text_shadow(2, 2, 0, !main_colour * 0.66 + !black * 0.33)
+        color: $white
+        +text_shadow(2, 2, 0, $main_colour * 0.66 + $black * 0.33)
       h2
         +font_size("humongous")
         font-weight: bold
@@ -33,10 +33,10 @@
       div.leader
         padding: 10px 20px
         +rounded_corners("top", 5)
-        background = !yellow * 0.85 + !black * 0.15
+        background: $yellow * 0.85 + $black * 0.15
         position: relative
         &>*
-          color = !black
+          color: $black
           line-height: 1
         h2
           +font_size("large")
@@ -48,12 +48,12 @@
           left: 20px
           height: 0
           width: 0
-          border-top = 10px "solid" !yellow * 0.85 + !black * 0.15
+          border-top: 10px "solid" $yellow * 0.85 + $black * 0.15
           border-right: 20px solid transparent
           border-bottom: none
           border-left: 10px solid transparent
       form
-        background = !white
+        background: $white
         +rounded_corners("bottom", 5)
         padding: 20px
         div.complex_field
@@ -65,20 +65,20 @@
         display: none
   #search_results
     float: right
-    background = !white
+    background: $white
     position: relative
     z-index: 10
     width: 0
-    border-left = 0px "solid" !light_grey
+    border-left: 0px "solid" $light_grey
     height: 520px
     display: none
     div.try
       div.leader
         padding: 10px
-        background = !yellow * 0.85 + !black * 0.15
+        background: $yellow * 0.85 + $black * 0.15
         position: relative
         &>*
-          color = !black
+          color: $black
           line-height: 1
         h2
           +font_size("medium")
@@ -93,12 +93,12 @@
           height: 0
           width: 0
           margin: -5px 0 0
-          border-top = 10px "solid" !yellow * 0.85 + !black * 0.15
+          border-top: 10px "solid" $yellow * 0.85 + $black * 0.15
           border-right: 20px solid transparent
           border-bottom: none
           border-left: 10px solid transparent
       form
-        background = !white
+        background: $white
         +rounded_corners("bottom", 5)
         padding: 10px
         &>*>span
@@ -130,7 +130,7 @@
         font-weight: bold
         margin: 0
       p
-        color = !grey
+        color: $grey
     li:last-child
       margin: 0
 
@@ -144,7 +144,7 @@
         float: left
         width: 50px
       h4
-        color = !main_colour
+        color: $main_colour
         +font_size("large")
         margin: 0 0 0 65px
       p
@@ -172,7 +172,7 @@
     a.picture, a.logo
       display: block
       float: right
-      border = 1px "solid" !light_grey * 0.25 + !white * 0.75
+      border: 1px "solid" $light_grey * 0.25 + $white * 0.75
       position: relative
       &.picture
         width: 78px
@@ -190,15 +190,15 @@
         right: 0
         left: 0
         padding: 3px 0 2px
-        color = !white
+        color: $white
         +font_size("tiny")
         font-weight: bold
         text-decoration: none
-        background = !main_colour
+        background: $main_colour
         text-align: center
         display: none
       &:hover
-        border-color = !main_colour
+        border-color: $main_colour
         span
           display: block
 
@@ -209,7 +209,7 @@ ul.users
     display: block
     margin: 1px 0 0 0
     padding: 5px 10px
-    border-top = 1px "solid" !light_grey * 0.25 + !white * 0.75
+    border-top: 1px "solid" $light_grey * 0.25 + $white * 0.75
     b.pointer
       display: none
       position: absolute
@@ -218,14 +218,14 @@ ul.users
       height: 0
       weight: 0
       border: 10px solid transparent
-      border-right = 10px "solid" !white
+      border-right: 10px "solid" $white
       border-left: none
       z-index: 11
     img.picture
       width: 38px
       height: 38px
       display: block
-      border = 1px "solid" !light_grey * 0.25 + !white * 0.75
+      border: 1px "solid" $light_grey * 0.25 + $white * 0.75
       float: left
       overflow: hidden
     a.name
@@ -240,7 +240,7 @@ ul.users
     small
       display: block
       +font_size("tiny")
-      color = !grey
+      color: $grey
       margin-left: 45px
   > li:first-child
     b.pointer
@@ -254,7 +254,7 @@ div.user
     width: 38px
     height: 38px
     display: block
-    border = 1px "solid" !light_grey * 0.25 + !white * 0.75
+    border: 1px "solid" $light_grey * 0.25 + $white * 0.75
     float: left
     overflow: hidden
   a.name
@@ -269,7 +269,7 @@ div.user
   small
     display: block
     +font_size("tiny")
-    color = !grey
+    color: $grey
     margin-left: 45px
 
 
@@ -279,7 +279,7 @@ span.stars_rating
   &.small
     height: 9px
     width: 49px
-    background: url('/images/stars_rating_small.png') no-repeat
+    background: url(/images/stars_rating_small.png) no-repeat
 
 #map
   height: 520px
@@ -287,7 +287,7 @@ span.stars_rating
 div.location_finder
   display: block
   span.value
-    color = !dark_grey
+    color: $dark_grey
   div.location_search
     display: block
     margin: 0 0 0 130px
@@ -300,7 +300,7 @@ div.location_finder
       width: auto
       margin: 0
       text-align: left
-      color = !dark_grey
+      color: $dark_grey
     a
       display: block
       list-style: none
@@ -319,16 +319,16 @@ div.options
     padding: 0 8px
     height: 22px
     line-height: 22px
-    background: url('/images/transparent_backgrounds/main_colour_50.png')
+    background: url(/images/transparent_backgrounds/main_colour_50.png)
     +font_size("tiny")
     text-transform: uppercase
-    +text_shadow(1, 1, 0, !main_colour * 0.85 + !black * 0.15)
-    color = !white
+    +text_shadow(1, 1, 0, $main_colour * 0.85 + $black * 0.15)
+    color: $white
     text-decoration: none
     font-weight: bold
     &:hover
-      background = !main_colour
-      +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+      background: $main_colour
+      +text_shadow(1, 1, 0, $main_colour * 0.66 + $black * 0.33)
 
 /* Commutes */
 #commutes_controller
@@ -349,12 +349,12 @@ div.options
             +rounded_corners("left", 2)
             b
               border-left: none
-              border-right = 5px "solid" !white
+              border-right: 5px "solid" $white
           &.next
             +rounded_corners("right", 2)
             b
               border-right: none
-              border-left = 5px "solid" !white
+              border-left: 5px "solid" $white
           &.today
             +rounded_corners("all", 2)
             margin: 0 0 0 4px
@@ -366,8 +366,8 @@ div.options
           &.month
             +rounded_corners("right", 2)
           &.active
-            background = !white
-            color = !black
+            background: $white
+            color: $black
             +text_shadow(0, 0, 0, transparent)
       span.displayed
         margin: 0 0 0 12px
@@ -396,12 +396,12 @@ div.options
             line-height: 1
             font-weight: bold
             +font_size("small")
-            color = !grey
+            color: $grey
             text-decoration: none
-            background = !white
+            background: $white
             +rounded_corners("all", 2)
             &:hover
-              color = !main_colour
+              color: $main_colour
             small
               display: block
               +font_size("tiny")
@@ -415,7 +415,7 @@ div.options
             left: 50%
             margin: 0 0 -10px -10px
             border: 10px solid transparent
-            border-top = 10px "solid" !main_colour
+            border-top: 10px "solid" $main_colour
             border-bottom: none
             z-index: 10
           &:last-child
@@ -423,11 +423,11 @@ div.options
               margin-right: 0
           &.active
             a
-              background = !main_colour
-              color = !white
-              +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+              background: $main_colour
+              color: $white
+              +text_shadow(1, 1, 0, $main_colour * 0.66 + $black * 0.33)
               small
-                +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+                +text_shadow(1, 1, 0, $main_colour * 0.66 + $black * 0.33)
             b.pointer
               display: block
       &.view_month
@@ -443,9 +443,9 @@ div.options
             font-weight: bold
             +font_size("small")
             text-decoration: none
-            background = !main_colour
-            color = !white
-            +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+            background: $main_colour
+            color: $white
+            +text_shadow(1, 1, 0, $main_colour * 0.66 + $black * 0.33)
             +rounded_corners("all", 2)
           &:last-child
             label
@@ -466,8 +466,8 @@ div.options
             line-height: 1
             +font_size("tiny")
             font-weight: bold
-            color = !grey
-            background: url('/images/transparent_backgrounds/main_colour_10.png')
+            color: $grey
+            background: url(/images/transparent_backgrounds/main_colour_10.png)
             text-align: right
           &:first-child
             width: 131px
@@ -477,11 +477,11 @@ div.options
           div.content
             padding: 2px
             +rounded_corners("bottom", 2)
-            background = !white
+            background: $white
             div.commute
               padding: 3px
               +rounded_corners("all", 2)
-              background = !light_grey * 0.25 + !white * 0.75
+              background: $light_grey * 0.25 + $white * 0.75
               margin: 0 0 5px
               &:last-child
                 margin: 0
@@ -519,7 +519,7 @@ div.options
           width: 0
           text-indent: -9000px
           border: 5px solid transparent
-          border-left = 5px solid !light_grey * 0.33 + !white * 0.66
+          border-left: 5px solid $light_grey * 0.33 + $white * 0.66
           border-right: none
           margin: -5px 0 0
       &:last-child
@@ -529,7 +529,7 @@ div.options
         cursor: pointer
         a.go
           b
-            border-left-color = !light_grey
+            border-left-color: $light_grey
   #commutes.panel
     div.content
       padding: 0
@@ -540,7 +540,7 @@ div.options
           padding: 5px
           position: relative
           list-style: none
-          border-bottom = 1px "solid" !light_grey * 0.5 + !white * 0.5
+          border-bottom: 1px "solid" $light_grey * 0.5 + $white * 0.5
   #commute.panel
     div.content
       div.details
@@ -574,16 +574,16 @@ div.options
       thead
         tr
           th
-            background = !light_grey * 0.15 + !white * 0.85
+            background: $light_grey * 0.15 + $white * 0.85
             +font_size("small")
             font-weight: bold
-            border-bottom = 1px "solid" !light_grey
+            border-bottom: 1px "solid" $light_grey
             &.select
               width: 1px
       tbody
         tr
           td
-            border-bottom = 1px "solid" !light_grey * 0.5 + !white * 0.5
+            border-bottom: 1px "solid" $light_grey * 0.5 + $white * 0.5
             &.subject
               a
                 font-weight: bold
